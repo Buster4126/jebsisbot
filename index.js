@@ -9,7 +9,7 @@ const active = new Map();
 const client = new discord.Client();
 client.commands = new discord.Collection();
 
-client.login(token.env.token);
+client.login(process.env.token);
 
 
 fs.readdir("./commands/", (err, files) => {
